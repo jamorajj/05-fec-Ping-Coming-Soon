@@ -2,7 +2,7 @@
 
 Frontend Challenge - Ping Coming Soon
 
-Solution for Ping Coming Soon challenge.
+Solution for Ping Coming Soon challenge
 
 # Frontend Mentor - Ping Coming Soon
 
