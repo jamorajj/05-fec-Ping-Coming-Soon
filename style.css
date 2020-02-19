@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  margin-top: 3rem;
+}
+
+header .logo {
+  text-align: center;
+}
+
+header .headline {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+header .headline span {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+header .copy {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  width: 550px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+
+.form-group .form-field {
+  flex: 2;
+}
+
+.form-group .form-field input {
+  width: 370px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 25px;
+}
+
+.form-group .form-field input::placeholder {
+  color: hsl(0, 0%, 59%);
+}
+
+.input-error {
+  border: 1px solid hsl(354, 100%, 66%) !important;
+}
+
+.form-group .form-field .error {
+  display: none;
+  position: relative;
+  left: 16px;
+  top: 5px;
+  color: hsl(354, 100%, 66%);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.form-group .form-button {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+
+.form-group .form-button button {
+  padding: 1rem 1rem;
+  width: 160px;
+  height: 54px;
+  border-radius: 40px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  background: hsl(223, 87%, 63%);
+}
+
+.form-group .form-button button:hover {
+  background: hsl(223, 81%, 69%);
+}
+
+.hero {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.hero img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 2rem;
+}
+
+footer .icons {
+  text-align: center;
+}
+
+footer .icons div {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  background: hsl(223, 100%, 94%);
+  border-radius: 70px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 0.5rem;
+}
+
+.icon-color {
+  position: relative;
+  top: 8px;
+  color: hsl(223, 87%, 63%);
+  font-size: 1rem;
+}
+
+footer .copy {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .content {
+    width: 400px;
+    align-items: center;
+  }
+
+  header .logo img {
+    width: 20%;
+  }
+
+  header .headline {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  header .copy {
+    font-size: 0.8rem;
+  }
+
+  form {
+    width: 350px;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group .form-field {
+    flex: 1;
+  }
+
+  .form-group .form-button {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .form-group .form-field .error {
+    left: 40px;
+    top: 5px;
+  }
+
+  .form-group .form-button button {
+    width: 300px;
+  }
+
+  .form-group .form-field input {
+    width: 300px;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+}
